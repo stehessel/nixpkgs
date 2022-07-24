@@ -31197,6 +31197,8 @@ with pkgs;
   );
   wf-config = callPackage ../applications/window-managers/wayfire/wf-config.nix { };
 
+  wayout = callPackage ../tools/wayland/wayout { };
+
   waypipe = callPackage ../applications/networking/remote/waypipe { };
 
   wayv = callPackage ../tools/X11/wayv {};
