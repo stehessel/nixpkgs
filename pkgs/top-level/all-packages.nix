@@ -30440,6 +30440,8 @@ with pkgs;
 
   swh_lv2 = callPackage ../applications/audio/swh-lv2 { };
 
+  swhkd = callPackage ../tools/wayland/swhkd { };
+
   swift-im = libsForQt514.callPackage ../applications/networking/instant-messengers/swift-im {
     inherit (gnome2) GConf;
     boost = boost168;
